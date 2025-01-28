@@ -17,6 +17,6 @@ This project provides a password generator and manager that allows you to genera
 
 
 
-<h3 style="front-size: 15px; color: blue;">latest Update :</h3>
+<h3 style="front-size: 15px; color: blue;">Latest Update :</h3>
 
 <p>In the latest update, users can input the desired length of their password and specify the number of strong passwords to generate but this functionality has been added in two new codes.</p>
