@@ -14,3 +14,5 @@ This project provides a password generator and manager that allows you to genera
 
   <h3 style="font-size: 15px;"> Code Credits:</h3>
  Code written by **Parv Bhardwaj** for the Strong  Generator and Manager project.  
+
+<p>In the latest update, users can input the desired length of their password and specify the number of strong passwords to generate but this functionality has been added in two new codes.</p>
