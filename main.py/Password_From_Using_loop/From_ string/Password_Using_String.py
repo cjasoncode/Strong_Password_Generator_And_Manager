@@ -41,21 +41,26 @@ if Letter_input < 0 or Number_input < 0 or Symbol_input < 0:
 
 Password = []
 
-Password.extend(random.choices(Letter,k=Letter_input))
-Password.extend(random.choices(Number,k=Number_input))
-Password.extend(random.choices(Symbol,k=Symbol_input))
+for i in range(0,Letter_input):
+    Password.append(random.choice(Letter))
+
+for i in range(0,Number_input):
+    Password.append(random.choice(Number))
+
+for i in range(0,Symbol_input):
+    Password.append(random.choice(Symbol))
      
 random.shuffle(Password)   
 
-Passwords = "".join(Password)
 
-print(f"\n\nServer     :   {Servers}\nUsername     :   @{User_name}\nHere Your Password     :   {Passwords}")
+print(f"\n\nServer     :  {Servers}\nUsername :  {User_name}\nHere Your Password :  {"".join(Password)}")
 time.sleep(2.0)
-print(f"\n\n   Your Password has been saved to the file : {Servers}_Password.txt"+"\n\n\n")    
+
+print(f"\n\n   .............   Your password has been saved to the file : {Servers}_Password.txt   ............."+"\n\n\n")    
 
 
 with open(f"{Servers}_Password.txt" ,'a') as file :
-    file.write(f"Server  : {Servers}\nUsername : @{User_name}")
-    file.write(f"\nPassword : {Passwords}")
+    file.write(f"Server  : {Servers}\nUsername : {User_name}")
+    file.write("\nPassword : "+"".join(Password))
 
 

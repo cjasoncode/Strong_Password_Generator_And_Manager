@@ -2,16 +2,16 @@ import random
 import time
 from tabulate import tabulate
 
-Letter = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
-Number = "0123456789"
-Symbol = r"/*-.},.;'[]\=-?><|+_)!@$%#^&*("
+Letter = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x', 'c', 'v', 'b', 'n', 'm', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C', 'V', 'B', 'N', 'M']
+Number = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+Symbol = ['/', '*', '-', '.', '}', ',', '.', ';', "'", '[', ']', '\\', '=', '-', '>', '<', '?', '|', '+', ')', '!', '@', '$', '%', '#', '^', '&', '*', '(']
 
 
 print("\n\n                    **************  Strong Password Generator and Manager  **************\n\n")
 time.sleep(2)
 
 Servers = input("Which Server or Website do you need to generate password for ? (eg... Instagram , Facebook , Twitter) :  ")
-User_name = input("Please Enter Username Exactly on Server or Website ? : @")
+User_name = input("Please Enter Username Exactly on Server or Website ? : @ ")
 
 if Servers==User_name :
     print("\n                 Error : Server and Username both are Exactly same       \n\n")
@@ -55,7 +55,8 @@ random.shuffle(Password)
 
 print(f"\n\nServer     :  {Servers}\nUsername :  {User_name}\nHere Your Password :  {"".join(Password)}")
 time.sleep(2.0)
-print(f"\n\n   Your password has been saved to the file : {Servers}_Password.txt"+"\n\n\n")    
+
+print(f"\n\n   .............   Your password has been saved to the file : {Servers}_Password.txt   ............."+"\n\n\n")    
 
 
 with open(f"{Servers}_Password.txt" ,'a') as file :
