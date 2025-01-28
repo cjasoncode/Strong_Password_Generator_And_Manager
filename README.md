@@ -12,7 +12,7 @@ This project provides a password generator and manager that allows you to genera
    ![Strong Password Generator](https://www.eventscount.com/upload/07-2022/article/Strong%20Password%20Generator.jpg)
 
 
-  <h2 style="font-size: 15px;"> Code Credits:</h2>
+  <h2 style="font-size: 15px;"> Code Credits :</h2>
  Code written by **Parv Bhardwaj** for the Strong  Generator and Manager project.  
 
 
